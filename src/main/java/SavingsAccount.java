@@ -3,10 +3,14 @@ public class SavingsAccount {
   private long total = 0;
 
   public boolean withdraw(long amount) {
-      
+    if (total > 0) {
+      total = total - amount;
+    } else {
+    }return false;
   }
-
   public void deposit(long amount) {
+         total = total + amount;
+      System.out.println("Total: " + total);
 
   }
 
