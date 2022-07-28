@@ -5,6 +5,12 @@ public class Main {
         System.out.println( "Withdraw Amount:" + account1.withdraw(25));
         System.out.println( "Total: " + account1.getTotal());
 
+        Thread thread1 = new Thread();
+        thread1.start();
+
+        Thread thread2 = new Thread();
+        thread2.start();
+
 
     }
 }
